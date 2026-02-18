@@ -56,7 +56,7 @@ app.post('/api/deposit', async (req, res) => {
             partner_id: PARTNER_ID,
             request_id: request_id,
             telco: type,
-            amount: amount,
+            amount: parseInt(amount),
             serial: serial,
             code: pin,
             sign: signature
